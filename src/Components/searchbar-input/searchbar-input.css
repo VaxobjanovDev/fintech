@@ -1,0 +1,53 @@
+.input-wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 787px;
+}
+
+.input-wrapper input{
+  height: 56px;
+  padding: 17px 0 17px 52px;
+  width: 100%;
+  background: #FAFAFA;
+  border: 1px solid #E2EDFF;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #464C52;
+}
+
+.input-wrapper input:focus{
+  border: 2px solid #4D94FF;
+}
+
+.icon{
+  position: absolute;
+  font-size: 30px;
+  top:9px;
+  left: 15px;
+  color: #ACB4BF;
+}
+
+.input-wrapper button{
+  background:  #0052B3;
+  padding: 16px 40px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 0;
+  height: 56px;
+  cursor: pointer;
+}
+
+.error-message{
+  position: absolute;
+  top: 58px;
+  left: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: red;
+}

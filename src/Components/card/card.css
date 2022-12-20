@@ -1,0 +1,154 @@
+.card{
+  margin-bottom: 16px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 16px 8px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1192px;
+}
+
+.card>.container{
+  padding: 0!important;
+}
+
+.card img{
+  border-radius: 6px;
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+}
+
+.card-title{
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.card-title h3{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #1F2123;
+}
+
+.card-title p{
+  color: #464C52;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  margin: 8px 0 10px 0;
+  padding-right: 12%;
+}
+
+.card-info-items{
+  display: flex;
+  align-items: flex-start;
+}
+
+.items-column{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.items-column:nth-child(2){
+  margin-left: 25px;
+}
+
+.card-info-item{
+  display: flex;
+  align-items: center;
+  margin-bottom:20px;
+  color: #ACB4BF;
+}
+
+.card-info-item p{
+  color: #464C52;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.card-buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.card-button{
+  margin: 8px 0;
+  background-color: #E0EAF5;
+  color: #0052B3;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width:133px;
+}
+
+.card-buttons a{
+  text-decoration: none;
+}
+
+.button-icon{
+  margin-right: 5px;
+  font-size: 13px!important;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  color: #8492A6;
+}
+
+.rating span{
+  margin-left:5px;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.rating-icon-box{
+  display: flex;
+  align-items: center;
+  margin-left: 26px;
+}
+
+.rating-icon{
+  color: #F2C94C;
+  font-size: 14px!important;
+}
+
+
+@media(max-width: 1200px){
+  .items-column:nth-child(2){
+    margin-left: 15px;
+  }
+}
+
+@media(max-width: 992px) {
+
+  .card{
+    height: 100%;
+  }
+
+  .card-info-item, .card-buttons{
+    margin-top: 16px;
+  }
+
+  .card-buttons button{
+    width: 100%;
+  }
+  .card-buttons a{
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+.banner{
+  height: 290px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner h2{
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  font-style: normal;
+  color: #1F2123;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.banner span{
+  color: #4D94FF;
+}
+
+.center{
+  text-align: center;
+}

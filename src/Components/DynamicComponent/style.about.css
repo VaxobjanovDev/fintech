@@ -1,0 +1,192 @@
+/* about styles */
+.main__about {
+  padding: 0 24px;
+  font-family: "Open-sans";
+}
+
+.main__about-social-item svg {
+  width: 15px;
+  height: 15px;
+}
+
+.main__about-header {
+  display: flex;
+  align-items: center;
+}
+
+.main__about-header-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(77, 148, 255, 0.2);
+  background: rgba(77, 148, 255, 0.1);
+}
+
+.main__about-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #464c52;
+}
+
+.main__about-body {
+  display: flex;
+  justify-content: space-between;
+  max-width: 892px;
+  margin-top: 20px;
+}
+
+.main__about-info {
+  flex: 0.7;
+}
+
+.main__about-social-links {
+  flex: 0.2;
+}
+
+.main__about-info p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #8492a6;
+  font-weight: 600;
+}
+
+.main__about-info p:nth-child(2) {
+  margin: 20px 0;
+}
+
+.main__about-social-links .main__about-social-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.main__about-social-links .main__about-social-item svg {
+  width: 18px;
+  height: 19px;
+  fill: #acb4bf;
+  margin-right: 10px;
+}
+
+.main__about-social-links .main__about-social-item span {
+  width: 164px;
+}
+
+.read-more-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 0 !important;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0052b3;
+}
+
+.read-more-btn:hover {
+  opacity: 0.9;
+  transition: 0.5s ease;
+}
+
+.mian__about-details h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #464c52;
+  margin-bottom: 12px;
+}
+
+.main__about-detail-container {
+  max-width: 768px;
+}
+
+.main__about-details-overlay {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.main__about-details-overlay .main__about-detail-item:nth-child(1) {
+  flex: 0.2;
+}
+.main__about-details-overlay .main__about-detail-item.title {
+  flex: 0.4;
+}
+.main__about-detail-item {
+  flex: 0.5;
+}
+
+.main__about-detail-btn {
+  margin-top: 12px;
+}
+
+.main__about-detail-btn button {
+  color: #4d94ff;
+  padding: 4px 12px;
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 550;
+  transition: 0.4s ease;
+  border-radius: 115px;
+  background-color: rgba(77, 148, 255, 0.2);
+}
+
+.main__about-detail-btn button:hover {
+  background-color: rgba(47, 112, 209, 0.2);
+  color: #0f3f88;
+}
+.main__about-detail-btn button:nth-child(2) {
+  margin: 0 12px;
+}
+.main__about-detail-title,
+.main__about-detail-description {
+  font-weight: 580;
+  line-height: 20px;
+}
+
+.main__about-detail-title {
+  color: #8492a6;
+  font-size: 12px;
+  font-weight: 600;
+}
+.main__about-detail-description {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #464c52;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 992px) {
+  .main__about-info {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__about {
+    padding: 0;
+  }
+  .main__about-body {
+    flex-direction: column;
+  }
+  .main__about-social-links {
+    margin-left: 0;
+    margin: 15px 0;
+  }
+  .main__about-details-overlay {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .main__about-detail-item {
+    flex: 1;
+    margin-top: 15px;
+  }
+}

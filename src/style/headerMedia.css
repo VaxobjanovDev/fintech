@@ -1,0 +1,50 @@
+@media screen and (max-width: 1225px) {
+    .ComSuccessBox{
+        width: 235px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ComSuccessBox{
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header-items h1{
+        font-size: 40px;
+    }
+
+    .header-items p{
+        font-size: 14px;
+    }
+
+    .dotted{
+        display: none;
+    }
+
+    .header-items{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header-items h1{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-items p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-items h1{
+        font-size: 28px;
+        line-height: 35px;
+        padding-bottom: 20px;
+    }
+}

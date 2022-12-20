@@ -1,0 +1,32 @@
+.cards{
+  background: #F6FAFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards-title{
+  margin: 36px 0;
+  padding: 0 16px;
+}
+
+.cards-title h2{
+  font-weight: 700;
+  color: #464C52;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.cards-box{
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.cards-box h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1F2123;
+}

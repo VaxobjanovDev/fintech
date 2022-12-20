@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  padding: 0 2rem !important;
+}
+
+.navbar-header {
+  display: flex;
+  padding: 18px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-header__leftside {
+  display: flex;
+  align-items: center;
+  flex: 0.6;
+}
+
+.navbar-header-icons {
+  display: flex;
+}
+
+.navbar-header-icons:nth-child(2) {
+  margin: 0 23px;
+}
+
+.navbar-header__icon svg {
+  width: 18px;
+  height: 20px;
+  margin-right: 9px;
+  fill: #acb4bf;
+}
+
+.navbar__header-location_info {
+  font-size: 14px;
+  font-weight: 450;
+  color: #464c52;
+}
+
+.navbar-header-dropdown {
+  display: flex;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar-header-dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+.header__dropdown-btn {
+  position: relative;
+}
+
+.header__dropdown-btn svg {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+.navbar-header-dropdown_subscribe {
+  margin: 0 11px;
+}
+
+.navbar-header-dropdown img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.dropdown__list {
+  background-color: #fff;
+  position: absolute;
+  width: 130px;
+  margin-top: 10px;
+  display: none;
+  left: -5%;
+}
+
+.dropdown__list.active {
+  display: block;
+}
+
+.dropdown__list > .navbar-header-dropdown-item {
+  padding: 10px 4px;
+  border: 1px solid #ddeded;
+  cursor: pointer;
+}
+
+.header__rightside-btn {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: transparent;
+  transition: 0.4s ease;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.header__rightside-btn:nth-child(2) {
+  background-color: #0052b3;
+  margin-left: 10px;
+  color: #fff;
+  border: transparent;
+}
+
+.header__rightside-btn:hover {
+  background-color: #0052b3;
+  color: #fff;
+}
+
+.header__rightside-btn:nth-child(2):hover {
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .container{
+    padding: 0 1rem !important;
+  }
+}
