@@ -6,26 +6,26 @@ import {SearchResult} from "../search-result";
 import {useState} from "react";
 
 export const Banner = ({setData}) => {
- const [searchData,setSearchData] = useState(null)
+ const [searchData, setSearchData] = useState(null)
  let backgroundStyle = {
   backgroundImage: `url(${Back})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover"
  }
-const handleClick = ()=>{
- setData(searchData)
- setSearchData(null)
-}
+ const handleClick = () => {
+  setData(searchData)
+  setSearchData(null)
+ }
  return (
   <div className={"banner"} style={backgroundStyle}>
    <div className="container d-flex flex-column justify-content-center">
     <h2>Enter your <span>keyword</span></h2>
-    <div className="col-md-12 d-flex justify-content-center">
+    <div className="col-md-12 d-flex justify-content-center relative">
      <SearchbarInput handleClick={handleClick} setSearchData={setSearchData}/>
     </div>
-    {searchData !== null && searchData.length > 0 && (<div className="col-md-12 d-flex justify-content-center">
+    {searchData !== null && searchData.length > 0 && (
      <SearchResult data={searchData}/>
-    </div>)}
+    )}
    </div>
   </div>
  )
