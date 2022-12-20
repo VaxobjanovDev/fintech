@@ -6,7 +6,7 @@ import './searchbar-input.css'
 import {ErrorMessage, Field, Form, Formik} from "formik";
 import {ErrorMessageBox} from "./error-message";
 
-export const SearchbarInput = ({setData}) => {
+export const SearchbarInput = ({handleClick,setSearchData}) => {
  const [searchValue, setSearchValue] = useState("")
 
  let INITIALVALUE = {
@@ -25,12 +25,12 @@ export const SearchbarInput = ({setData}) => {
   if (searchValue) {
    const data = await getCompoanyList(searchValue)
    try {
-    setData(data?.data?.payload?.content)
+    setSearchData(data?.data?.payload?.content)
    } catch (e) {
     console.log(e)
    }
   }
-  else setData(null)
+  else setSearchData(null)
  }
 
  useEffect(() => {
@@ -63,7 +63,7 @@ export const SearchbarInput = ({setData}) => {
       </Field>
       <ErrorMessage name="inputValue"
                     render={msg => <ErrorMessageBox>{msg}</ErrorMessageBox>}/>
-      <button>Search</button>
+      <button type={"button"} onClick={handleClick}>Search</button>
      </Form>
     )}
    </Formik>

@@ -1,5 +1,7 @@
 .footer{
   height: 458px;
+  position: relative;
+  z-index: -1;
 }
 
 .navigation{

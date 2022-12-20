@@ -8,7 +8,7 @@ export const SearchModule = ()=>{
  return(
   <>
    <Subheader/>
-   <Banner  setData={setData}/>
+   <Banner data={data} setData={setData}/>
    {data && <Cards data={data}/>}
   </>
  )
