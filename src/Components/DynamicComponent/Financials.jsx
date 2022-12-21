@@ -6,7 +6,7 @@ const Financials = ({data}) => {
   style: "currency",
   currency: "USD",
  });
- console.log(data.payload)
+
  return (
   <div className="financials">
    <div className="financials-header">
@@ -37,36 +37,18 @@ const Financials = ({data}) => {
       <div className="financials-body-leftSide-wrapper">
        <div className="financials-body-leftside-item">
         <h4 className="financials-body-leftside-title open-sans f-600 font-12">
-         Funding Stage
+         Funding Rounds
         </h4>
         <p className="financials-body-letfside-desc open-sans f-600 font-12">
-         {lastFunding.fundingStage}
+         {data?.payload?.numberOfFundingRounds}
         </p>
        </div>
        <div className="financials-body-leftside-item">
         <h4 className="financials-body-leftside-title open-sans f-600 font-12">
-         Number Of LeadInvestors
+         Total Funding Amount
         </h4>
         <p className="financials-body-letfside-desc open-sans f-600 font-12">
-         {lastFunding.numberOfLeadInvestors}
-        </p>
-       </div>
-      </div>
-      <div className="financials-body-leftSide-wrapper">
-       <div className="financials-body-leftside-item">
-        <h4 className="financials-body-leftside-title open-sans f-600 font-12">
-         Last Funding Date
-        </h4>
-        <p className="financials-body-letfside-desc open-sans f-600 font-12">
-         {lastFunding.fundingDate}
-        </p>
-       </div>
-       <div className="financials-body-leftside-item">
-        <h4 className="financials-body-leftside-title open-sans f-600 font-12">
-         Last Funding Amount
-        </h4>
-        <p className="financials-body-letfside-desc open-sans f-600 font-12">
-         {numberFormatter.format(lastFunding.fundingAmount)}
+         {numberFormatter.format(data?.payload?.totalFundingAmount)}
         </p>
        </div>
       </div>
@@ -81,10 +63,28 @@ const Financials = ({data}) => {
        </div>
        <div className="financials-body-leftside-item">
         <h4 className="financials-body-leftside-title open-sans f-600 font-12">
-         Number Of FundingRounds
+         Number Of Lead Investors
         </h4>
         <p className="financials-body-letfside-desc open-sans f-600 font-12">
-         {data?.payload?.numberOfFundingRounds}
+         {lastFunding.numberOfLeadInvestors}
+        </p>
+       </div>
+      </div>
+      <div className="financials-body-leftSide-wrapper">
+       <div className="financials-body-leftside-item">
+        <h4 className="financials-body-leftside-title open-sans f-600 font-12">
+         Funding Date
+        </h4>
+        <p className="financials-body-letfside-desc open-sans f-600 font-12">
+         {lastFunding.fundingDate}
+        </p>
+       </div>
+       <div className="financials-body-leftside-item">
+        <h4 className="financials-body-leftside-title open-sans f-600 font-12">
+         Funding Stage
+        </h4>
+        <p className="financials-body-letfside-desc open-sans f-600 font-12">
+         {lastFunding.fundingStage}
         </p>
        </div>
       </div>
@@ -93,10 +93,10 @@ const Financials = ({data}) => {
       <div className="financials-range-container">
        <div className="financials-range-card">
         <h1 className="financials-range-title">
-         Total Funding Amount
+         Last Funding Amount
         </h1>
         <span className="financials-range-currency">
-                  {numberFormatter.format(data?.payload?.totalFundingAmount)}
+                  {numberFormatter.format(lastFunding.fundingAmount)}
                 </span>
        </div>
        <div className="financials-range-card">
