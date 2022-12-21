@@ -162,6 +162,33 @@
   text-transform: capitalize;
 }
 
+.contact{
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-social-button{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.5s;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.icons{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#ACB4BF;
+  border-radius: 4px;
+  transition: all 0.5s;
+  margin-right: 6px;
+}
+
+
 @media screen and (max-width: 992px) {
   .main__about-info {
     flex: 1;

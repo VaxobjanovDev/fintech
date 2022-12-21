@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useEffect, useState } from "react";
 import "./style.content.css";
-import {useNavigate, useLocation, Link} from "react-router-dom";
+import {useNavigate, useLocation} from "react-router-dom";
 import Zip24Banner from "../images/zip-24-banner.png";
 import About from "../Components/DynamicComponent/About";
 import { getCompanyById } from "../api";

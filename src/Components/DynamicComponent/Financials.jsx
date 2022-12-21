@@ -5,8 +5,6 @@ const Financials = ({ data }) => {
     style: "currency",
     currency: "USD",
   });
-
-  console.log(data);
   return (
     <div className="financials">
       <div className="financials-header">
@@ -21,9 +19,9 @@ const Financials = ({ data }) => {
             <path
               d="M6.00063 19.0934V22.5M10.847 6.34636C9.7398 5.2392 7.79146 4.47036 6.00063 4.42136L10.847 6.34636ZM1.1543 16.8464C2.19613 18.2347 4.13163 19.0257 6.00063 19.0934L1.1543 16.8464ZM6.00063 4.42136C3.8703 4.3642 1.9628 5.32903 1.9628 7.96103C1.9628 12.8074 10.847 10.3842 10.847 15.2305C10.847 17.9955 8.48213 19.182 6.00063 19.0922V4.42136ZM6.00063 4.42136V1.50003V4.42136Z"
               stroke="#4D94FF"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -46,7 +44,7 @@ const Financials = ({ data }) => {
               </div>
               <div className="financials-body-leftside-item">
                 <h4 className="financials-body-leftside-title open-sans f-600 font-12">
-                  Number of Funding
+                  Number of Founding rounds
                 </h4>
                 <p className="financials-body-letfside-desc open-sans f-600 font-12">
                   {index + 1}
@@ -77,47 +75,17 @@ const Financials = ({ data }) => {
             <div className="financials-range-container">
               <div className="financials-range-card">
                 <h1 className="financials-range-title">
-                  Total Funding Amount and Currencry
+                  Total Funding Amount
                 </h1>
                 <span className="financials-range-currency">
-                  <svg
-                    width="12"
-                    height="24"
-                    viewBox="0 0 12 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.00063 19.0934V22.5M10.847 6.34636C9.7398 5.2392 7.79146 4.47036 6.00063 4.42136L10.847 6.34636ZM1.1543 16.8464C2.19613 18.2347 4.13163 19.0257 6.00063 19.0934L1.1543 16.8464ZM6.00063 4.42136C3.8703 4.3642 1.9628 5.32903 1.9628 7.96103C1.9628 12.8074 10.847 10.3842 10.847 15.2305C10.847 17.9955 8.48213 19.182 6.00063 19.0922V4.42136ZM6.00063 4.42136V1.50003V4.42136Z"
-                      stroke="#4D94FF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  {numberFormatter.format(data?.payload?.companyValuation)}
+                  {numberFormatter.format(data?.payload?.totalFundingAmount)}
                 </span>
               </div>
               <div className="financials-range-card">
                 <h1 className="financials-range-title">
-                  Estimated Revanue Range
+                  Estimated Revenue Range
                 </h1>
                 <span className="financials-range-currency">
-                  <svg
-                    width="12"
-                    height="24"
-                    viewBox="0 0 12 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6.00063 19.0934V22.5M10.847 6.34636C9.7398 5.2392 7.79146 4.47036 6.00063 4.42136L10.847 6.34636ZM1.1543 16.8464C2.19613 18.2347 4.13163 19.0257 6.00063 19.0934L1.1543 16.8464ZM6.00063 4.42136C3.8703 4.3642 1.9628 5.32903 1.9628 7.96103C1.9628 12.8074 10.847 10.3842 10.847 15.2305C10.847 17.9955 8.48213 19.182 6.00063 19.0922V4.42136ZM6.00063 4.42136V1.50003V4.42136Z"
-                      stroke="#4D94FF"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
                   {numberFormatter.format(data?.payload?.estimatedRevenueRange)}
                 </span>
               </div>

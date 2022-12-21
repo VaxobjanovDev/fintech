@@ -1,9 +1,9 @@
 import {NavLink} from "./list";
 import {firstRow, fourthRow, secondRow, thirdRow} from "./data";
-import './footer.css'
 import {SocialMedia} from "./social";
 import Logo from '../../images/FIT_Logo.png'
 import {Copyright} from "./copyright";
+import './footer.css'
 
 export const Footer = () => {
  return (

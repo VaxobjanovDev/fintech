@@ -20,7 +20,7 @@ export const SearchResult = ({data}) => {
      <div className="data-wrap">
       {data !== null
        && data.length > 0 && data?.map((item) => (
-        <Link to={"/company/" + item.id} state={item.id}>
+        <Link key={item.id} to={"/company/" + item.id} state={item.id}>
          <div className={"row hover"}>
           <div className="col-sm-4 d-flex align-items-center">
            <h5>{item.name}</h5>
